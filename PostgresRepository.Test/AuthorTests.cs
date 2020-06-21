@@ -1,8 +1,7 @@
 using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using API.Domain;
 using PostgresRepository.Database;
-using PostgresRepository.Models;
-
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace PostgresRepository.Test
 {
     [TestClass]
@@ -13,7 +12,7 @@ namespace PostgresRepository.Test
         {
             try
             {
-                var dto = new AuthorModel
+                var dto = new Author
                 {
                     FullName = "James Bond",
                     Email = "bond@james.com",
